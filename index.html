@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de enfermedades en cítricos</title>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pattern"></div>
+    <form>
+        <div class="center">
+            <input onchange="set_image();" type="file">
+        </div>
+        <div class="center">
+            <img id="image" src="none.jpg" alt="">
+        </div>
+        <div class="center">
+            <button type="button" onclick="predict();">Predecir</button>
+        </div>
+    </form>
+
+    <div id="result" class="center2">
+        <hr>
+        <h3>Resultados</h3>
+        <div id="result-content">
+            <p>
+                <span>Estado: </span>
+                <span id="disease"></span>
+            </p>
+            <p>
+                <span>Probabilidad: </span>
+                <span id="probability"></span>
+            </p>
+        </div>
+        <hr>
+        <table id="prediction-table" class="center">
+            <thead>
+                <tr>
+                    <th>Enfermedad</th>
+                    <th>Probabilidad</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+
+</html>
