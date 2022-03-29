@@ -38,7 +38,7 @@ function append_prediction(prediction) {
 // Sends the image to the server and returns the prediction
 function predict() {
     var DATA = document.querySelector('input[type="file"]').files[0];
-    const URL = 'https://westus2.api.cognitive.microsoft.com/customvision/v3.0/Prediction/cbceb6b4-6f4d-4717-8572-974776e9f407/classify/iterations/Iteration2/image';
+    const URL = 'https://westus2.api.cognitive.microsoft.com/customvision/v3.0/Prediction/8dcca2e3-ba14-4435-a113-a1de68388a75/classify/iterations/citrus/image';
     const HEADERS = {
         "Prediction-Key": "0c35d4a0a6894b9fa4fc0f4bfb931b3d",
         "Content-Type": "application/octet-stream"
