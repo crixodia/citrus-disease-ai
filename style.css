@@ -79,7 +79,7 @@ input::-webkit-file-upload-button {
 }
 
 input::before {
-    content: 'Selecciona una imagen';
+    content: '   Select an image   ';
 }
 
 /* Center all elements */

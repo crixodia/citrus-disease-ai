@@ -5,36 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicción de enfermedades en cítricos</title>
+    <title>Citrus diseases</title>
 
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/orange.ico">
 </head>
 
 <body>
     <div class="pattern"></div>
+
+    <div class="center">
+        <p><a href="https://github.com/crixodia/PlantDiseaseCustomAi/tree/main/samples" target="blank">Sample images</a></p>
+    </div>
+
     <form>
         <div class="center">
             <input onchange="set_image();" type="file">
         </div>
         <div class="center">
-            <img id="image" src="none.jpg" alt="">
+            <img id="image" src="assets/none.jpg" alt="">
         </div>
         <div class="center">
-            <button type="button" onclick="predict();">Predecir</button>
+            <button type="button" onclick="predict();">Predict</button>
         </div>
     </form>
 
     <div id="result" class="center2">
         <hr>
-        <h3>Resultados</h3>
+        <h3>Prediction</h3>
         <div id="result-content">
             <p>
-                <span>Estado: </span>
+                <span>State: </span>
                 <span id="disease"></span>
             </p>
             <p>
-                <span>Probabilidad: </span>
+                <span>Probability: </span>
                 <span id="probability"></span>
             </p>
         </div>
@@ -42,12 +49,22 @@
         <table id="prediction-table" class="center">
             <thead>
                 <tr>
-                    <th>Enfermedad</th>
-                    <th>Probabilidad</th>
+                    <th>Disease</th>
+                    <th>Probability</th>
                 </tr>
             </thead>
         </table>
     </div>
+
+    
+    <div class="center">
+        <p>Source code <a href="https://github.com/crixodia/PlantDiseaseCustomAi">here</a></p>
+    </div>
+
+    <div class="center">
+        <p>Made with ❤️ by <a href="https://github.com/crixodia" target="blank">crixodia</a></p>
+    </div>
+
 </body>
 
 </html>
