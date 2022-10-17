@@ -5,4 +5,4 @@ And also this app could detect a healthy plant. There are samples of the used [d
 
 ![Dataset](assets/grid.png)
 
-If you want to test it [click here](https://cristianbastidas.com/PlantDiseaseCustomAi), and you could use these [sample images](samples/).
+If you want to test it [click here](https://cristianbastidas.com/citrus-disease-ai/), and you could use these [sample images](samples/).
